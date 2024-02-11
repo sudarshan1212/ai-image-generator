@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/*  */
+.image-gallery .img-card.loading{
+    background:rgb(230, 226, 226);
+}
+.image-gallery .img-card.loading img{
+    width:80px;
+    height: 80px;
+    display: hidden;
+   
+    
+}
+.image-gallery .img-card:not(.loading):hover .download-btn{
+    display: flex;
+    animation-duration: 100ms;
+}
+.image-gallery .img-card .download-btn{
+    display: none;
+    
+}
+.img-card{
+    height: 300px;
+    width: 300px;
+    /* justify-items: stretch; */
+}

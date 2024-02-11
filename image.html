@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="./image.css">
+</head>
+<body class="">
+    <section class=" flex bg-fixed  " style="background-image: url('../images/Screenshot 2024-02-08 212512.png');" id="image-generator">
+        <div id="content" class="mx-auto my-12 mt-28 text-center ">
+                <h1 class="uppercase text-3xl font-bold text-white">Ai image-generator</h1>
+                <p class="mt-4 text-xl font-semibold uppercase text-white">convert your text into image within a second</p>
+                <form class="bg-white py-6 px-5  rounded-lg shadow-md mt-4 " action="" id="generate-form">
+                    <input type="text" class="outline-none mr-10 border-2 border-purple-400 p-2 px-5 text-left w-96"  placeholder="describe what you want" id="prompt-input" required>
+                    <select class="mr-8 border-2 p-1 rounded-lg  outline-none" name="" id="img-quantity">
+                        <option value="1">1 Image</option>
+                        <option value="2">2 Image</option>
+                        <option value="3">3 Image</option>
+                        <option value="4" selected>4 Image</option>
+                    </select>
+                    <button type="submit" class="generate-btn bg-white border-2 hover:text-white border-purple-400  text-purple-400 p-2 hover:bg-purple-600 rounded-lg active:bg-purple-950 shadow-lg font-medium uppercase duration-100 hover:scale-105  ">Generate</button>
+                </form>
+        </div>
+    </section>
+    <section  class="image-gallery flex gap-3 px-5 py-4 justify-items-stretch mt-10 mb-10" id="image-gallery">
+        <div id="img-card" class="img-card h-10/12 w-96 border-2 relative flex justify-center items-center">
+            <img class="h-10/12 w-96" src="./images/img-1.jpg" alt="" srcset="">
+            <a href="#" class="download-btn" id="download-btn">
+                <img class=" absolute bottom-1 hover:scale-105 duration-100 p-2 rounded-full font-bold bg-white right-5" src="./images/download.svg" alt="" srcset="">
+            </a>
+        </div>
+        <div id="img-card" class="img-card  h-8/12 w-96 border-2 relative flex justify-center items-center">
+            <img class="h-8/12 w-96" src="./images/img-2.jpg" alt="" srcset="">
+            <a href="#" class="download-btn" id="download-btn">
+                <img class=" absolute bottom-1 hover:scale-105 duration-100 p-2 rounded-full font-bold bg-white right-5" src="./images/download.svg" alt="" srcset="">
+            </a>
+        </div>
+
+        <div id="img-card" class="img-card  h-8/12 w-96 border-2 relative flex justify-center items-center">
+            <img class="h-8/12 w-96" src="./images/img-3.jpg" alt="" srcset="">
+            <a href="#" class="download-btn" id="download-btn">
+                <img class=" absolute bottom-1 hover:scale-105 duration-100 p-2 rounded-full font-bold bg-white right-5" src="./images/download.svg" alt="" srcset="">
+            </a>
+        </div>
+        <div id="img-card" class="img-card  h-8/12 w-96 border-2 relative flex justify-center items-center">
+            <img class="h-8/12 w-96" src="./images/img-4.jpg" alt="" srcset="">
+            <a href="#" class="download-btn" id="download-btn">
+                <img class=" absolute bottom-1 hover:scale-105 duration-100 p-2 rounded-full font-bold bg-white right-5" src="./images/download.svg" alt="" srcset="">
+            </a>
+        </div>
+
+       
+
+
+    </section>
+    <script src="./image.js" defer></script>
+</body>
+</html>
+
+
+<!-- <div class="img-card relative ">
+    <img class="h-10/12 w-96 " src="./images/img-1.jpg" alt="" srcset="">
+    <a href="#" class="download-btn" id="download-btn">
+        <img class="absolute bottom-5 hover:scale-105 duration-100 p-2 rounded-full font-bold bg-white right-5" src="./images/download.svg" alt="" srcset="">
+    </a>
+</div> -->

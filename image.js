@@ -12,7 +12,7 @@ const OPENAI_API_KEY="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"
        srcImage.onload=()=>{
         imageCard.classList.remove('loading')
         download.setAttribute('href',aiGeneratedImg)
-        download.setAttribute('download',`imageName[index].jpg`)
+        download.setAttribute('download',`${imageName[index]}.jpg`)
 
         
     
